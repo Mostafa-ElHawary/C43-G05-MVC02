@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\welcome\\source\\repos\\ASP-Empty1\\MVC01G02\\wwwroot\\css\\LayoutStyle.css",
+      "PackagePath": "staticwebassets\\css\\LayoutStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\welcome\\source\\repos\\ASP-Empty1\\MVC01G02\\wwwroot\\css\\MovieLayoutStyle.css",
+      "PackagePath": "staticwebassets\\css\\MovieLayoutStyle.css"
+    },
+    {
       "Id": "C:\\Users\\welcome\\source\\repos\\ASP-Empty1\\MVC01G02\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\css\\bootstrap.min.css"
     },

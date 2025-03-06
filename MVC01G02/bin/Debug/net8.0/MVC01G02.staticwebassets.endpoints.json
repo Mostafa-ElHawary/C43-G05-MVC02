@@ -3,6 +3,170 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
+      "Route": "css/LayoutStyle.css",
+      "AssetFile": "css/LayoutStyle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ozRHEYBy5w/NBw4eSRfJF5jeQOXGJW2EntZBza6k10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 23:03:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1ozRHEYBy5w/NBw4eSRfJF5jeQOXGJW2EntZBza6k10="
+        }
+      ]
+    },
+    {
+      "Route": "css/LayoutStyle.mclffh63op.css",
+      "AssetFile": "css/LayoutStyle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ozRHEYBy5w/NBw4eSRfJF5jeQOXGJW2EntZBza6k10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 23:03:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mclffh63op"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1ozRHEYBy5w/NBw4eSRfJF5jeQOXGJW2EntZBza6k10="
+        },
+        {
+          "Name": "label",
+          "Value": "css/LayoutStyle.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/MovieLayoutStyle.0yd9trli7w.css",
+      "AssetFile": "css/MovieLayoutStyle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4059"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KPgOd4bgVGrT1pD7sFoLBVJNz2aoAsALIWBQiCBU5fI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 23:02:54 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0yd9trli7w"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KPgOd4bgVGrT1pD7sFoLBVJNz2aoAsALIWBQiCBU5fI="
+        },
+        {
+          "Name": "label",
+          "Value": "css/MovieLayoutStyle.css"
+        }
+      ]
+    },
+    {
+      "Route": "css/MovieLayoutStyle.css",
+      "AssetFile": "css/MovieLayoutStyle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4059"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KPgOd4bgVGrT1pD7sFoLBVJNz2aoAsALIWBQiCBU5fI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 23:02:54 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KPgOd4bgVGrT1pD7sFoLBVJNz2aoAsALIWBQiCBU5fI="
+        }
+      ]
+    },
+    {
       "Route": "lib/bootstrap/css/bootstrap.min.46ein0sx1k.css",
       "AssetFile": "lib/bootstrap/css/bootstrap.min.css",
       "Selectors": [],

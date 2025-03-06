@@ -1,3 +1,5 @@
+wwwroot\css\LayoutStyle.css
+wwwroot\css\MovieLayoutStyle.css
 wwwroot\lib\bootstrap\css\bootstrap.min.css
 wwwroot\lib\bootstrap\js\bootstrap.bundle.min.js
 wwwroot\lib\bootstrap\js\bootstrap.min.js

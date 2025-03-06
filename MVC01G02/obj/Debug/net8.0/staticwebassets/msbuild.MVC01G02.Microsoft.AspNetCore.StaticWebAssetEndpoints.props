@@ -1,5 +1,29 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/MVC01G02/css/LayoutStyle.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LayoutStyle.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1ozRHEYBy5w/NBw4eSRfJF5jeQOXGJW2EntZBza6k10="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2197"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221ozRHEYBy5w/NBw4eSRfJF5jeQOXGJW2EntZBza6k10=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 23:03:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MVC01G02/css/LayoutStyle.mclffh63op.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LayoutStyle.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mclffh63op"},{"Name":"integrity","Value":"sha256-1ozRHEYBy5w/NBw4eSRfJF5jeQOXGJW2EntZBza6k10="},{"Name":"label","Value":"_content/MVC01G02/css/LayoutStyle.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2197"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221ozRHEYBy5w/NBw4eSRfJF5jeQOXGJW2EntZBza6k10=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 23:03:49 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MVC01G02/css/MovieLayoutStyle.0yd9trli7w.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\MovieLayoutStyle.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0yd9trli7w"},{"Name":"integrity","Value":"sha256-KPgOd4bgVGrT1pD7sFoLBVJNz2aoAsALIWBQiCBU5fI="},{"Name":"label","Value":"_content/MVC01G02/css/MovieLayoutStyle.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4059"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KPgOd4bgVGrT1pD7sFoLBVJNz2aoAsALIWBQiCBU5fI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 23:02:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MVC01G02/css/MovieLayoutStyle.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\MovieLayoutStyle.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-KPgOd4bgVGrT1pD7sFoLBVJNz2aoAsALIWBQiCBU5fI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4059"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022KPgOd4bgVGrT1pD7sFoLBVJNz2aoAsALIWBQiCBU5fI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 06 Mar 2025 23:02:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MVC01G02/lib/bootstrap/css/bootstrap.min.46ein0sx1k.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\css\bootstrap.min.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

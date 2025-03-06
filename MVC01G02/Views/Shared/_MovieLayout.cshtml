@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"] - Movie App</title>
+    @* <!-- Bootstrap 5 CSS --> *@
+    @* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> *@
+    @* <!-- Font Awesome --> *@
+    @* <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"> *@
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/css/MovieLayoutStyle.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Movie<span>App</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/Movie/Index">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Movie/About">
+                            <i class="fas fa-info-circle"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Movie/ContactUs">
+                            <i class="fas fa-envelope"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Movie/Privacy">
+                            <i class="fas fa-shield-alt"></i> Privacy
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container py-4">
+        <div class="row g-4">
+            <!-- Sidebar -->
+            <div class="col-lg-3">
+                <div class="sidebar">
+                    <h5 class="mb-3 fw-bold text-secondary">Movie Management</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" asp-controller="Movie" asp-action="Index">
+                                <i class="fas fa-film"></i> All Movies
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Movie" asp-action="Create">
+                                <i class="fas fa-plus-circle"></i> Create Movie
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Movie" asp-action="Search">
+                                <i class="fas fa-search"></i> Search Movies
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-star"></i> Top Rated
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-calendar-alt"></i> Coming Soon
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-lg-9">
+                <div class="main-content">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-heading">About MovieApp</h5>
+                    <p class="mb-4">Discover the latest movies, read reviews, and stay updated with everything happening in the world of cinema.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="list-unstyled footer-list">
+                        <li><a href="/Movie/Index"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="/Movie/About"><i class="fas fa-chevron-right"></i> About</a></li>
+                        <li><a href="/Movie/ContactUs"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="/Movie/Privacy"><i class="fas fa-chevron-right"></i> Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <ul class="list-unstyled footer-list">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Movie Street, Cinema City</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@movieapp.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 5PM</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <p>Subscribe for updates on new releases and special offers.</p>
+                    <div class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email">
+                            <button class="btn btn-primary" type="button">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="background-color: rgba(255,255,255,0.1);">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">� @DateTime.Now.Year MovieApp. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by MovieApp Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Back to top button
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 300) {
+                    $('#backToTop').addClass('show');
+                } else {
+                    $('#backToTop').removeClass('show');
+                }
+            });
+
+            $('#backToTop').click(function() {
+                $('html, body').animate({scrollTop: 0}, 800);
+                return false;
+            });
+
+            // Active link handling
+            var currentLocation = window.location.pathname;
+            $('.nav-link').each(function() {
+                var linkHref = $(this).attr('href');
+                if (currentLocation === linkHref) {
+                    $(this).addClass('active');
+                }
+            });
+
+            // Smooth scrolling
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                var target = this.hash;
+                var $target = $(target);
+                
+                if($target.length) {
+                    $('html, body').animate({
+                        'scrollTop': $target.offset().top - 70
+                    }, 800, 'swing');
+                }
+            });
+
+            // Newsletter form submission
+            $('.newsletter-form button').click(function() {
+                var email = $('.newsletter-form input').val();
+                if (email && validateEmail(email)) {
+                    alert('Thank you for subscribing with: ' + email);
+                    $('.newsletter-form input').val('');
+                } else {
+                    alert('Please enter a valid email address');
+                }
+            });
+
+            // Email validation function
+            function validateEmail(email) {
+                @* var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; *@
+                return test(email);
+            }
+
+            // Navbar scroll effect
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar').css('box-shadow', '0 4px 20px rgba(0, 0, 0, 0.1)');
+                } else {
+                    $('.navbar').css('box-shadow', '0 4px 12px rgba(0, 0, 0, 0.05)');
+                }
+            });
+
+            // Mobile sidebar toggle
+            $('.navbar-toggler').click(function() {
+                $('.sidebar').toggleClass('show-mobile');
+            });
+        });
+    </script>
+</body>
+</html>

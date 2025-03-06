@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+xjDIYRqhb5+kOSd7pk1Voj4qFZbtqj5PnjvpD0zPPk=",
+  "Hash": "4FadF7rTJh3mA0skERCjEsDYJLDMroHCv3yux/Nyza0=",
   "Source": "MVC01G02",
   "BasePath": "_content/MVC01G02",
   "Mode": "Default",
@@ -16,6 +16,48 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\welcome\\source\\repos\\ASP-Empty1\\MVC01G02\\wwwroot\\css\\LayoutStyle.css",
+      "SourceId": "MVC01G02",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\welcome\\source\\repos\\ASP-Empty1\\MVC01G02\\wwwroot\\",
+      "BasePath": "_content/MVC01G02",
+      "RelativePath": "css/LayoutStyle#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mclffh63op",
+      "Integrity": "1ozRHEYBy5w/NBw4eSRfJF5jeQOXGJW2EntZBza6k10=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\LayoutStyle.css"
+    },
+    {
+      "Identity": "C:\\Users\\welcome\\source\\repos\\ASP-Empty1\\MVC01G02\\wwwroot\\css\\MovieLayoutStyle.css",
+      "SourceId": "MVC01G02",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\welcome\\source\\repos\\ASP-Empty1\\MVC01G02\\wwwroot\\",
+      "BasePath": "_content/MVC01G02",
+      "RelativePath": "css/MovieLayoutStyle#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0yd9trli7w",
+      "Integrity": "KPgOd4bgVGrT1pD7sFoLBVJNz2aoAsALIWBQiCBU5fI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\MovieLayoutStyle.css"
+    },
     {
       "Identity": "C:\\Users\\welcome\\source\\repos\\ASP-Empty1\\MVC01G02\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
       "SourceId": "MVC01G02",
@@ -207,6 +249,170 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/LayoutStyle.css",
+      "AssetFile": "C:\\Users\\welcome\\source\\repos\\ASP-Empty1\\MVC01G02\\wwwroot\\css\\LayoutStyle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ozRHEYBy5w/NBw4eSRfJF5jeQOXGJW2EntZBza6k10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 23:03:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1ozRHEYBy5w/NBw4eSRfJF5jeQOXGJW2EntZBza6k10="
+        }
+      ]
+    },
+    {
+      "Route": "css/LayoutStyle.mclffh63op.css",
+      "AssetFile": "C:\\Users\\welcome\\source\\repos\\ASP-Empty1\\MVC01G02\\wwwroot\\css\\LayoutStyle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2197"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ozRHEYBy5w/NBw4eSRfJF5jeQOXGJW2EntZBza6k10=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 23:03:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mclffh63op"
+        },
+        {
+          "Name": "label",
+          "Value": "css/LayoutStyle.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1ozRHEYBy5w/NBw4eSRfJF5jeQOXGJW2EntZBza6k10="
+        }
+      ]
+    },
+    {
+      "Route": "css/MovieLayoutStyle.0yd9trli7w.css",
+      "AssetFile": "C:\\Users\\welcome\\source\\repos\\ASP-Empty1\\MVC01G02\\wwwroot\\css\\MovieLayoutStyle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4059"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KPgOd4bgVGrT1pD7sFoLBVJNz2aoAsALIWBQiCBU5fI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 23:02:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0yd9trli7w"
+        },
+        {
+          "Name": "label",
+          "Value": "css/MovieLayoutStyle.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KPgOd4bgVGrT1pD7sFoLBVJNz2aoAsALIWBQiCBU5fI="
+        }
+      ]
+    },
+    {
+      "Route": "css/MovieLayoutStyle.css",
+      "AssetFile": "C:\\Users\\welcome\\source\\repos\\ASP-Empty1\\MVC01G02\\wwwroot\\css\\MovieLayoutStyle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4059"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KPgOd4bgVGrT1pD7sFoLBVJNz2aoAsALIWBQiCBU5fI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 23:02:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KPgOd4bgVGrT1pD7sFoLBVJNz2aoAsALIWBQiCBU5fI="
+        }
+      ]
+    },
     {
       "Route": "lib/bootstrap/css/bootstrap.min.46ein0sx1k.css",
       "AssetFile": "C:\\Users\\welcome\\source\\repos\\ASP-Empty1\\MVC01G02\\wwwroot\\lib\\bootstrap\\css\\bootstrap.min.css",
