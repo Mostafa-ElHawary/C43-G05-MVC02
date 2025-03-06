@@ -1,0 +1,285 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewBag.Title</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 56px; /* For fixed navbar */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #3498db !important;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            margin: 0 5px;
+            position: relative;
+        }
+
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #3498db;
+            bottom: 0;
+            left: 0;
+            transition: width 0.3s;
+        }
+
+        .nav-link:hover:after {
+            width: 100%;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 80px 0;
+            margin-bottom: 30px;
+        }
+
+        .content-wrapper {
+            flex: 1;
+            padding: 30px 0;
+        }
+
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 40px 0 20px;
+        }
+
+        .footer a {
+            color: #a3c6e9;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-heading {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background: #3498db;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyApp</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/ContactUs">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home/Privacy">Privacy</a>
+                    </li>
+                    <li class="nav-item ml-lg-3">
+                        <a class="btn btn-outline-primary" href="#">Get Started</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (optional - can be included in specific pages) -->
+    <div class="hero-section d-none" id="heroSection">
+        <div class="container text-center">
+            <h1 class="display-4">Welcome to MyApp</h1>
+            <p class="lead">A modern application for all your needs</p>
+            <button class="btn btn-light btn-lg mt-3">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-wrapper">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-heading">About MyApp</h5>
+                    <p>We provide innovative solutions to help you achieve your goals. Our team is dedicated to excellence and customer satisfaction.</p>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class="footer-heading">Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/Home/Index">Home</a></li>
+                        <li><a href="/Home/About">About</a></li>
+                        <li><a href="/Home/ContactUs">Contact</a></li>
+                        <li><a href="/Home/Privacy">Privacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-heading">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt mr-2"></i> 123 Street, City</li>
+                        <li><i class="fas fa-phone mr-2"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope mr-2"></i> info@myapp.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-heading">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Email">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-left">
+                    <p class="mb-0">Copyrights &copy; Hawary @DateTime.Now.Year</p>
+                </div>
+                <div class="col-md-6 text-center text-md-right">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-danger"></i> by Hawary</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Check if we're on the home page to show hero section
+            if (window.location.pathname === '/' || window.location.pathname === '/Home/Index') {
+                $('#heroSection').removeClass('d-none');
+            }
+
+            // Navbar scroll effect
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 50) {
+                    $('.navbar').addClass('navbar-scrolled').css('background', 'rgba(255, 255, 255, 0.95)');
+                } else {
+                    $('.navbar').removeClass('navbar-scrolled').css('background', '#fff');
+                }
+
+                // Show/hide back to top button
+                if ($(this).scrollTop() > 300) {
+                    $('#backToTop').fadeIn();
+                } else {
+                    $('#backToTop').fadeOut();
+                }
+            });
+
+            // Back to top button click
+            $('#backToTop').click(function() {
+                $('html, body').animate({scrollTop: 0}, 800);
+                return false;
+            });
+
+            // Smooth scrolling for anchor links
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').animate({
+                    'scrollTop': $target.offset().top - 70
+                }, 800, 'swing');
+            });
+
+            // Add active class to nav items based on current page
+            var currentLocation = window.location.pathname;
+            $('.navbar-nav .nav-link').each(function() {
+                var linkHref = $(this).attr('href');
+                if (currentLocation === linkHref) {
+                    $(this).addClass('active');
+                }
+            });
+
+            // Initialize tooltips
+            $('[data-toggle="tooltip"]').tooltip();
+
+            // Newsletter form submission (demo)
+            $('.input-group button').click(function() {
+                var email = $('.input-group input').val();
+                if (email) {
+                    alert('Thank you for subscribing with: ' + email);
+                    $('.input-group input').val('');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
